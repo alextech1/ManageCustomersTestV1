@@ -9,7 +9,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
 using System.Data.SqlClient;
 using System.Data.SqlTypes;
 using System.Data.OleDb;
@@ -34,12 +33,6 @@ namespace Nile.Windows
         protected override void OnLoad(EventArgs e)
         {
             base.OnLoad(e);
-
-            //var connString = ConfigurationManager.ConnectionStrings["Database"]; 
-
-            //_database = new Database(connString.ConnectionString);
-
-            //BindGrid(false);
         }
 
 
@@ -57,7 +50,6 @@ namespace Nile.Windows
         private void miCustomerAdd_Click(object sender, EventArgs e)
         {
             var dlg = new CustomerForm(CustomersList);
-            
             dlg.ShowDialog(this);
             
 
@@ -66,8 +58,6 @@ namespace Nile.Windows
         private void miProductAdd_Click(object sender, EventArgs e)
         {
             var dlg = new ProductForm(CustomersList);
-            //dlg.Database = _database;
-
             dlg.ShowDialog(this);
         }
 

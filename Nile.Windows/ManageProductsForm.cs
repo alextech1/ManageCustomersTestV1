@@ -25,10 +25,6 @@ namespace Nile.Windows
         protected override void OnLoad(EventArgs e)
         {
             base.OnLoad(e);
-
-            //var items = Products.GetAll();
-
-            
         }
 
         private void ManageProductsForm_Load(object sender, EventArgs e)

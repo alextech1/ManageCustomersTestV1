@@ -50,9 +50,7 @@ namespace Nile.Windows
                 commandText = value;
             }
         }
-        /// <summary>
-        /// Usage = Opens a new connection with database
-        /// </summary>
+        //Opens a new connectino with database
         public void OpenDBConnection()
         {
             objConnection = new SqlConnection(ConnectionString);
@@ -75,9 +73,7 @@ namespace Nile.Windows
         {
             return objSqlCommand.ExecuteNonQuery();
         }
-        /// <summary>
-        /// Usage = Creates a new command object 
-        /// </summary>
+        //Creates a command object
         public void CreateCommandObject()
         {
             objSqlCommand = objConnection.CreateCommand();
@@ -95,9 +91,7 @@ namespace Nile.Windows
             objConnection.Close();
             return objDataTable;
         }
-        /// <summary>
-        /// Closes the database connection
-        /// </summary>
+        //Closes the Data Connection
         public void CloseConnection()
         {
             if (objConnection != null)
